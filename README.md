@@ -23,3 +23,12 @@ inefficient.
 
 What is the big $\Theta$ complexity of your implementation? Add your
 answer, including your reasoning, to this markdown file.
+
+### Analysis
+
+The algorthim will go through all V to add them to unmarked. Then we consider all the unmarked V which is another V. Then we loop through the remaining V which averages to V/2. Then we consider some of the edges in each loop. However, since we only consider each edge once, we will only have a total edge of E. Giving us. $V + V(\frac{V}{2}) + E = V+\frac{V^2}{2} + E = V(1+\frac{V}{2}) + E \in \Theta(V^2 + E)$
+
+
+
+I certify that I have listed all sources used to complete this exercise, including the use of any Large Language Models. All of the work is my own, except where stated otherwise. I am aware that plagiarism carries severe penalties and that if plagiarism is suspected, charges may be filed against me without prior notice.
+
